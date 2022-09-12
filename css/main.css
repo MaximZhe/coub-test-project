@@ -13,6 +13,9 @@ body {
 		background: #FFFFFF;
 		position: relative;
 		margin: 0;
+		-webkit-transition: 4s;
+		transition: 4s;
+		opacity: 0;
 }
 
 nav, footer, header {

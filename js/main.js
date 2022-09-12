@@ -48,4 +48,8 @@ btnMenuOpen.addEventListener("click", () => {
         btnMenuOpen.classList.remove("active");
     }  
 })
-
+//Плавная загрузка страницы
+window.onload = function(){
+    body.style.opacity = 1;
+};
+    
