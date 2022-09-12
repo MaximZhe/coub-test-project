@@ -92,10 +92,9 @@ img {
 		        justify-content: center;
 }
 .header .menu-mobail .menu-mobail__list .menu-mobail__link {
-		font-family: "ArialRegular";
 		color: #000000;
 		font-size: 20px;
-		font-weight: 700;
+		font-weight: 500;
 		padding: 22px 0;
 		border-bottom: 1px solid #E6E6E6;
 		width: 100%;
