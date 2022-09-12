@@ -200,10 +200,51 @@
 				padding: 4px 0;
 				position: relative;
 		}
+<<<<<<< HEAD
+=======
+		.header .menu-mobail {
+				display: none;
+				position: absolute;
+				width: 100%;
+				background: #FFFFFF;
+				top: -200px;
+		}
+		.header .menu-mobail.active {
+				display: block;
+		}
+>>>>>>> 90a9a346251fac07acd927f507b25d796906018e
 		.header .menu-mobail .menu-mobail__list {
 				display: -webkit-box;
 				display: -ms-flexbox;
 				display: flex;
+<<<<<<< HEAD
+=======
+				-webkit-box-orient: vertical;
+				-webkit-box-direction: reverse;
+				    -ms-flex-direction: column-reverse;
+				        flex-direction: column-reverse;
+				-webkit-box-align: center;
+				    -ms-flex-align: center;
+				        align-items: center;
+				-webkit-box-pack: center;
+				    -ms-flex-pack: center;
+				        justify-content: center;
+		}
+		.header .menu-mobail .menu-mobail__list .menu-mobail__link {
+				font-family: "ArialRegular";
+				color: #000000;
+				font-size: 20px;
+				font-weight: 700;
+				padding: 22px 0;
+				border-bottom: 1px solid #E6E6E6;
+				width: 100%;
+				display: -webkit-box;
+				display: -ms-flexbox;
+				display: flex;
+				-webkit-box-pack: center;
+				    -ms-flex-pack: center;
+				        justify-content: center;
+>>>>>>> 90a9a346251fac07acd927f507b25d796906018e
 		}
 		.header .nav .logo {
 				margin-left: 0;
