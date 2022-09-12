@@ -79,7 +79,9 @@ img {
 		display: block;
 }
 .header .menu-mobail .menu-mobail__list {
-		display: none;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
 		-webkit-box-orient: vertical;
 		-webkit-box-direction: reverse;
 		    -ms-flex-direction: column-reverse;
