@@ -416,3 +416,6 @@ img {
 		color: #000000;
 		font-size: 60px;
 }
+.footer .footer__logo:hover {
+		color: rgb(56, 61, 183);
+}
