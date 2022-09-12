@@ -13,8 +13,8 @@ body {
 		background: #FFFFFF;
 		position: relative;
 		margin: 0;
-		-webkit-transition: 4s;
-		transition: 4s;
+		-webkit-transition: 2s;
+		transition: 2s;
 		opacity: 0;
 }
 
