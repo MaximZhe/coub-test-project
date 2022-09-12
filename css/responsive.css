@@ -4,6 +4,8 @@
 /* Large: 992px - 1199px */
 @media (max-width: 1199px) {
 		.container {
+				-webkit-transition: 2s ease;
+				transition: 2s ease;
 				max-width: 960px;
 		}
 
@@ -28,6 +30,8 @@
 @media (max-width: 991px) {
 		.container {
 				max-width: 720px;
+				-webkit-transition: 2s ease;
+				transition: 2s ease;
 		}
 
 		.header {
@@ -186,6 +190,8 @@
 @media (max-width: 767px) {
 		.container {
 				max-width: 540px;
+				-webkit-transition: 2s ease;
+				transition: 2s ease;
 		}
 
 		body {
@@ -432,5 +438,7 @@
 		.container {
 				width: auto;
 				padding: 0 20px;
+				-webkit-transition: 2s ease;
+				transition: 2s ease;
 		}
 }
