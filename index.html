@@ -1,175 +1,176 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coub test project</title>
-    <meta name="description" content="">
-    <meta name="keywords" content=" ">
+    <meta name="description" content="Coub test project">
+    <meta name="keywords" content="Coub test project ">
+    <meta http-equiv="Cache-Control" content="no-cache" />
+    <meta http-equiv="Cache-Control" content="max-age=604800, must-revalidate" />
     <!--Favicon-->
     <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="/favicon.ico">
      <!--OG tags-->
     <meta property="og:type" content="website"/>
-    <meta property="og:title" content=""/>
-    <meta property="og:description" content=""/>
-    <meta property="og:image" content="">
+    <meta property="og:title" content="Coub test project"/>
+    <meta property="og:description" content="Coub test project"/>
     <!--Css -->
-	<link rel="stylesheet" href="css/fonts.css">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/fonts.min.css">
+    <link rel="stylesheet" href="css/main.min.css">
+    <link rel="stylesheet" href="css/responsive.min.css">
+    
 </head>
 <body>
     <header class="header">
-        <div class="menu-mobail" id="menu-mobail">
-            <nav class="menu-mobail__list">
-                <a href="./page.html" class="menu-mobail__link">
-                    TEXT
-                </a>
-                <a href="./page.html" class="menu-mobail__link">
-                    TEXT_TEXT
-                </a>
-                <a href="./page.html" class="menu-mobail__link">
-                    TEXT_TEXT_TEXT
-                </a>
-            </nav>
-        </div>
-        <div class="container">
-            <div class="nav">
-                <a href="./index.html" class="logo">
-                    <img src="img/logo.svg" class="logo__img" alt="">
-                    <span class="logo__text">LOGO</span>
-                </a>
-                <nav class="menu">
-                    
-                    <a href="./page.html" class="menu__link">
+        <div class="header__mobail header-mobail" id="menu-mobail">
+                <input class="header-mobail__input" id="menu-toggle" type="checkbox" role="button" aria-describedby="menu-mobail__list" aria-label="Кнопка меню" aria-roledescription="Кнопка открыть меню" />
+                <label class="header-mobail__btn" for="menu-toggle" role="button" aria-label="Кнопка открыть меню">
+                
+                <span></span>
+                </label>
+                <nav class="header-mobail__menu menu-list" id="menu-mobail__list" role="navigation">
+                    <a href="./page.html" class="menu-list__link" aria-roledescription="Ссылка на страницу 1">
                         TEXT
                     </a>
-                    <a href="./page.html" class="menu__link">
+                    <a href="./page.html" class="menu-list__link" aria-roledescription="Ссылка на страницу 2">
                         TEXT_TEXT
                     </a>
-                    <a href="./page.html" class="menu__link">
+                    <a href="./page.html" class="menu-list__link" aria-roledescription="Ссылка на страницу 3">
                         TEXT_TEXT_TEXT
                     </a>
                 </nav>
-                <button class="hamburger" type="button" id="namburger">
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                </button>
+
+        </div>
+        <div class="container">
+            <div class="header-desktop">
+                <a href="./index.html" class="header-desktop__logo logo" role="banner" aria-roledescription="ссылка на главную страницу">
+                    <img loading="lazy" src="img/logo.svg" width="60px" height="60px" class="logo__img" alt="Логотип компании" aria-hidden="true">
+                    <span class="logo__text">LOGO</span>
+                </a>
+                <nav class="header-desktop__menu desktop-menu" role="navigation">
+                    
+                    <a href="./page.html" class="desktop-menu__link" aria-roledescription="Ссылка на страницу 1">
+                        TEXT
+                    </a>
+                    <a href="./page.html" class="desktop-menu__link" aria-roledescription="Ссылка на страницу 2">
+                        TEXT_TEXT
+                    </a>
+                    <a href="./page.html" class="desktop-menu__link" aria-roledescription="Ссылка на страницу 3">
+                        TEXT_TEXT_TEXT
+                    </a>
+                </nav>
             </div>
         </div>
     </header>
-    <section class="offer">
+    <section class="site-head">
         <div class="container">
-            <div class="offer__wrapper">
-               <div class="content">
-                <h1 class="content__head">
-                    TEXT_TEXT_TEXT
-                </h1>
-                <p class="content__subtitle">
-                    TEXT_TEXT_TEXT_TEXT
-                </p>
-                <a href="./page.html" class="content__button">
-                    TEXT_TEXT_TEXT
-                </a>
+            <div class="site-head__wrapper">
+               <div class="site-head__content content">
+                    <h1 class="content__head">
+                        TEXT_TEXT_TEXT
+                    </h1>
+                    <p class="content__subtitle">
+                        TEXT_TEXT_TEXT_TEXT
+                    </p>
+                    <a href="./page.html" class="content__button" aria-roledescription="Ссылка на страницу заказа">
+                        TEXT_TEXT_TEXT
+                    </a>
                 </div>
-                <div class="offer__image">
-                    <img src="img/main-image.png" alt="">
+                <div class="site-head__image">
+                    <img  src="img/main-image.png" width="512px" height="512px" alt="Человек держит в руках планету" aria-hidden="true">
                 </div> 
             </div>
             
         </div>
     </section>
-    <secton class="projects-box">
+    <secton class="site-content" >
         <div class="container">
-            <div class="projects">
-                <div class="projects__item">
-                    <div class="projects__head">
-                        <div class="projects__image">
-                            <img src="img/details-image.svg" class="progects__pic" alt="">
+            <div class="site-content__wrapper content">
+                <div class="content__item">
+                    <div class="content__head">
+                        <div class="content__image">
+                            <img loading="lazy" src="img/details-image.svg" width="73px" height="73px"  alt="" aria-hidden="true">
                         </div>
-                        <h3 class="projects__header">
+                        <h2 class="content__title">
                             TEXT_TEXT
-                        </h3>
+                        </h2>
                     </div>
-                    <p class="project__text">
-                        TEXT_TEXT_TEXT_TEXT_TEXT
-                        TEXT_TEXT_TEXT_TEXT_TEXT
-                        TEXT_TEXT_TEXT_TEXT_TEXT
-                        TEXT_TEXT_TEXT_TEXT_TEXT
-                        TEXT_TEXT_TEXT_TEXT
+                    <p class="content__text">
+                        TEXT_ TEXT_ TEXT_ TEXT_ TEXT_ TEXT_ TEXT_ TEXT_ 
+                        TEXT_ TEXT_ TEXT_ TEXT_ TEXT_ TEXT_ TEXT_ TEXT_
+                        TEXT_ TEXT_ TEXT_ TEXT_ TEXT_ TEXT_ TEXT_ TEXT_
                     </p>
-                    <a href="./page.html" class="projects__btn">
+                    <a href="./page.html" class="content__link" aria-roledescription="Ссылка на другую страницу">
                         TEXT
-                        <img src="img/arrow-right.svg" class="project__pic" alt="">
+                        <img loading="lazy" src="img/arrow-right.svg" width="24px" height="12px" alt="картинка стрелки" aria-hidden="true">
                     </a>
                 </div>
-                <div class="projects__item">
-                    <div class="projects__head">
-                        <div class="projects__image">
-                            <img src="img/planet.svg" class="progects__pic" alt="">
+                <div class="content__item">
+                    <div class="content__head">
+                        <div class="content__image">
+                            <img loading="lazy" src="img/planet.svg" width="73px" height="73px" alt="" aria-hidden="true">
                         </div>
-                        <h3 class="projects__header">
+                        <h2 class="content__title">
                             TEXT_TEXT
-                        </h3>
+                        </h2>
                     </div>
-                    <p class="project__text">
-                        TEXT_TEXT_TEXT_TEXT_TEXT
-                        TEXT_TEXT_TEXT_TEXT_TEXT
-                        TEXT_TEXT_TEXT_TEXT_TEXT
-                        TEXT_TEXT_TEXT_TEXT_TEXT
-                        TEXT_TEXT_TEXT_TEXT
+                    <p class="content__text">
+                        TEXT_ TEXT_ TEXT_ TEXT_ TEXT_ TEXT_ TEXT_ TEXT_ 
+                        TEXT_ TEXT_ TEXT_ TEXT_ TEXT_ TEXT_ TEXT_ TEXT_
+                        TEXT_ TEXT_ TEXT_ TEXT_ TEXT_ TEXT_ TEXT_ TEXT_
                     </p>
-                    <a href="./page.html" class="projects__btn" >
+                    <a href="./page.html" class="content__link" aria-roledescription="Ссылка на другую страницу">
                         TEXT
-                        <img src="img/arrow-right.svg" class="project__pic" alt="">
+                        <img loading="lazy" src="img/arrow-right.svg" width="24px" height="12px"  alt="картинка стрелки" aria-hidden="true">
                     </a>
                 </div>
             </div>
         </div>
     </secton>
-    <section class="list">
+    <section class="site-benefits">
         <div class="container">
-            <h2 class="list__header">
+            <h2 class="site-benefits__title">
                 TEXT_TEXT
             </h2>
-            <div class="list__wrapper">
-                <div class="list__item">
-                    <div class="list__img">
-                        <img class="list__pic" src="img/list-image.svg" alt="">
+            <div class="site-benefits__wrapper benefits-list">
+                <div class="benefits-list__item">
+                    <div class="benefits-list__img">
+                        <img loading="lazy" width="40px" height="40px" src="img/list-image.svg" alt="" aria-hidden="true">
                     </div>
-                    <p class="list__text">
+                    <p class="benefits-list__text">
                         TEXT_TEXT_TEXT_TEXT 
                         TEXT_TEXT_TEXT_TEXT
                         TEXT_TEXT_TEXT_TEXT
                     </p>
                 </div>
-                <div class="list__item">
-                    <div class="list__img">
-                        <img class="list__pic" src="img/trust-image.svg" alt="">
+                <div class="benefits-list__item">
+                    <div class="benefits-list__img">
+                        <img  loading="lazy" width="40px" height="40px" src="img/trust-image.svg" alt="" aria-hidden="true">
                     </div>
-                    <p class="list__text">
+                    <p class="benefits-list__text">
                         TEXT_TEXT_TEXT_TEXT
                         TEXT_TEXT_TEXT_TEXT
                         TEXT_TEXT_TEXT_TEXT
                     </p>
                 </div>
-                <div class="list__item">
-                    <div class="list__img">
-                        <img class="list__pic" src="img/geadrs-image.svg" alt="">
+                <div class="benefits-list__item">
+                    <div class="benefits-list__img">
+                        <img  loading="lazy" width="40px" height="40px" src="img/geadrs-image.svg" alt="" aria-hidden="true">
                     </div>
-                    <p class="list__text">
+                    <p class="benefits-list__text">
                         TEXT_TEXT_TEXT_TEXT
                         TEXT_TEXT_TEXT_TEXT
                         TEXT_TEXT_TEXT_TEXT
                     </p>
                 </div>
-                <div class="list__item">
-                    <div class="list__img">
-                        <img class="list__pic" src="img/contract-image.svg" alt="">
+                <div class="benefits-list__item">
+                    <div class="benefits-list__img">
+                        <img  loading="lazy" width="40px" height="40px" src="img/contract-image.svg" alt="" aria-hidden="true">
                     </div>
-                    <p class="list__text">
+                    <p class="benefits-list__text">
                         TEXT_TEXT_TEXT_TEXT
                         TEXT_TEXT_TEXT_TEXT
                         TEXT_TEXT_TEXT_TEXT
@@ -178,13 +179,13 @@
             </div>
         </div>
     </section>
-    <footer class="footer">
+    <footer class="footer" role="contentinfo">
         <div class="container">
-            <a href="./index.html" class="footer__logo">
+            <a href="./index.html" class="footer__logo" aria-roledescription="ссылка на главную страницу">
                 LOGO
             </a>
         </div>
     </footer>
-    <script defer src="js/main.js"></script>
+    <script defer src="js/main.min.js"></script>
 </body>
 </html>

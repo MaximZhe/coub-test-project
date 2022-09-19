@@ -1,80 +1,84 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coub test project</title>
-    <meta name="description" content="">
-    <meta name="keywords" content=" ">
+    <meta name="description" content="Coub test project">
+    <meta name="keywords" content="Coub test project ">
+    <meta http-equiv="Cache-Control" content="no-cache" />
+    <meta http-equiv="Cache-Control" content="max-age=604800, must-revalidate" />
     <!--Favicon-->
     <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="/favicon.ico">
      <!--OG tags-->
     <meta property="og:type" content="website"/>
-    <meta property="og:title" content=""/>
-    <meta property="og:description" content=""/>
-    <meta property="og:image" content="">
+    <meta property="og:title" content="Coub test project"/>
+    <meta property="og:description" content="Coub test project"/>
     <!--Css -->
-	<link rel="stylesheet" href="css/fonts.css">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/fonts.min.css">
+    <link rel="stylesheet" href="css/main.min.css">
+    <link rel="stylesheet" href="css/responsive.min.css">
+    
 </head>
 <body>
     <header class="header">
-        <div class="menu-mobail" id="menu-mobail">
-            <nav class="menu-mobail__list">
-                <a href="/index.html" class="menu-mobail__link">
-                    TEXT
-                </a>
-                <a href="/index.html" class="menu-mobail__link">
-                    TEXT_TEXT
-                </a>
-                <a href="/index.html" class="menu-mobail__link">
-                    TEXT_TEXT_TEXT
-                </a>
-            </nav>
-        </div>
-        <div class="container">
-            <div class="nav">
-                <a href="./index.html" class="logo">
-                    <img src="img/logo.svg" class="logo__img" alt="">
-                    <span class="logo__text">LOGO</span>
-                </a>
-                <nav class="menu">
-                    <a href="./index.html" class="menu__link">
+        <div class="header__mobail header-mobail" id="menu-mobail">
+                <input class="header-mobail__input" id="menu-toggle" type="checkbox" role="button" aria-describedby="menu-mobail__list" aria-label="Кнопка меню" aria-roledescription="Кнопка открыть меню" />
+                <label class="header-mobail__btn" for="menu-toggle" role="button" aria-label="Кнопка открыть меню">
+                
+                <span></span>
+                </label>
+                <nav class="header-mobail__menu menu-list" id="menu-mobail__list" role="navigation">
+                    <a href="./index.html" class="menu-list__link" aria-roledescription="Ссылка на страницу 1">
                         TEXT
                     </a>
-                    <a href="./index.html" class="menu__link">
+                    <a href="./index.html" class="menu-list__link" aria-roledescription="Ссылка на страницу 2">
                         TEXT_TEXT
                     </a>
-                    <a href="./index.html" class="menu__link">
+                    <a href="./index.html" class="menu-list__link" aria-roledescription="Ссылка на страницу 3">
                         TEXT_TEXT_TEXT
                     </a>
                 </nav>
-                <button class="hamburger" type="button" id="namburger">
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                </button>
+
+        </div>
+        <div class="container">
+            <div class="header-desktop">
+                <a href="./index.html" class="header-desktop__logo logo" role="banner" aria-roledescription="ссылка на главную страницу">
+                    <img loading="lazy" src="img/logo.svg" width="60px" height="60px" class="logo__img" alt="Логотип компании" aria-hidden="true">
+                    <span class="logo__text">LOGO</span>
+                </a>
+                <nav class="header-desktop__menu desktop-menu" role="navigation">
+                    
+                    <a href="./index.html" class="desktop-menu__link" aria-roledescription="Ссылка на страницу 1">
+                        TEXT
+                    </a>
+                    <a href="./index.html" class="desktop-menu__link" aria-roledescription="Ссылка на страницу 2">
+                        TEXT_TEXT
+                    </a>
+                    <a href="./index.html" class="desktop-menu__link" aria-roledescription="Ссылка на страницу 3">
+                        TEXT_TEXT_TEXT
+                    </a>
+                </nav>
             </div>
         </div>
     </header>
-    <section class="offer offer_height">
+    <section class="site-head">
         <div class="container">
-            <div class="offer__wrapper">
-               <div class="content">
-                </div>
+            <div class="site-head__wrapper site-head__wrapper_heigth">
+               
             </div>
-            
         </div>
     </section>
-    <footer class="footer">
+    <footer class="footer" role="contentinfo">
         <div class="container">
-            <a href="./index.html" class="footer__logo">
+            <a href="./index.html" class="footer__logo" aria-roledescription="ссылка на главную страницу">
                 LOGO
             </a>
         </div>
     </footer>
-    <script defer src="js/main.js"></script>
+    <script defer src="js/main.min.js"></script>
 </body>
 </html>
